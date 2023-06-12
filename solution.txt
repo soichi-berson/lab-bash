@@ -1,0 +1,96 @@
+1. Using the echo command print in console "Hello World". Here is some info about echo command [https://discuss.codecademy.com/t/what-are-practical-uses-of-the-echo-command/394788]
+
+echo Hello World 
+
+2. Create a new directory called new_dir.
+
+mkdir new_dir
+
+3. Delete/Remove the directory new_dir.
+
+rm -rf new_dir
+
+4. Copy the file sed.txt from the lorem folder and paste it to the folder lorem-copy folder.
+
+cp sed.txt ../lorem-copy
+
+5. Copy the other two files from the lorem folder to lorem-copy folder in just one line using semicolon ;
+
+cp at.txt ../lorem-copy ; cp at.txte ../lorem-copy
+
+6. Show the sed.txt file content from the lorem folder. 
+
+cat sed.txt
+
+7 Show the at.txt file and lorem.txt file contents from lorem folder.
+
+cat at.txt
+
+8 Print the first 3 rows in sed.txt file from lorem-copy folder.
+
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
+
+9 Print the last 3 rows in sed.txt file from lorem-copy folder.
+
+ut ET voluptates repudiandae sint ET molestiae non recusandae. 
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores 
+alias consequatur aut perferendis doloribus asperiores repellat
+
+
+10. Add Homo homini lupus. at the end of sed.txt file in the lorem-copy folder.
+
+echo "Homo homini lupus" >> sed.txt 
+
+11. Print the last 3 rows in sed.txt file from lorem-copy folder. You should see Homo homini lupus..
+
+il molestiae consequatur, 
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+Homo homini lupus 
+
+12. sed command is used to replace the text in a file. Use the sed command to replace all occurances of et with ET in the file at.txt file present in the folder lorem. You can use the following link to refer to sed commands [https://www.linode.com/docs/guides/manipulate-text-from-the-command-line-with-sed/] Check the contents of the sed.txt file using cat command.
+
+ed -i -r 's/et/ET/' at.txt 
+
+13. Find who is the system user.
+
+ whoami
+
+ 14. Find the current path of the directory you are in.
+ 
+ pwd
+
+15. List all files with the extension .txt in lorem folder.
+
+find . -type f -name "*.txt"
+
+16. Count the rows in sed.txt file from lorem folder. Look concatenate cat and wc with the pipe |.
+
+cat sed.txt | wc -l
+
+17. Count the files which start with lorem in all directories. 
+
+lab-bash % ls -d lorem* | wc -l
+
+20. Store your name in a variable with read command.
+
+read var     
+Soichiro
+
+21. Print that variable.
+
+ echo $var
+
+22. Create a new directory named with variable name. 
+
+mkdir var
+
+23. Remove that directory.
+
+rm -rf var 
+
+
+
+
+
